@@ -1,0 +1,73 @@
+#这个配置文件记载了领地拥有者/管理员输入/res set或/res pset <player>时的Gui配置。
+#此配置文件应在插件刚刚加载时生成。
+#此配置文件由插件作者提供。目的仅为提供一个Gui配置的范例。
+#除此配置文件所标注的内容以外，没有其他占位符变量可用！
+#注意：这个Gui总共的大小为5*9=45个格子！
+Title: "领地全局权限|玩家 {player} 的权限" #竖线前面的为领地通用权限的设置，后面的是玩家权限的设置
+Buttons:
+  white_stained_glass_pane:
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。side类型的物品，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location: #在箱子内的格数
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+  red_stained_glass_pane:
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。side类型的物品，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location: #在箱子内的格数
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+  <available_locations>: #显示权限名的地方
+    Display: "&f权限名: {permission_name}" #这个{permission_name}的变量，在Lore中也可用！
+    Lore:
+      - ""
+      - "&f[&b➥&f] 描述: {permission_description}"
+      - ""
+    Location: #此项至少留出26个位置！
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35

@@ -1,0 +1,26 @@
+name: MagstarResidence
+main: top.magstar.residence.Residence
+version: 1.0.0
+api-version: 1.13
+depend:
+  - MagstarLib
+  - MagstarEconomy
+  - MagstarShop
+commands:
+  MagstarResidence:
+    aliases:
+      - "magstarres"
+      - "msres"
+      - "res"
+      - "RES"
+  MagstarResidenceAdmin:
+    aliases:
+      - "resadmin"
+      - "RESADMIN"
+      - "msresadmin"
+      - "magstarresadmin"
+permissions:
+  magstarresidence.max:
+    description: "Allow player to create infinite residents."
+    children:
+      magstarresidence.max.*: true

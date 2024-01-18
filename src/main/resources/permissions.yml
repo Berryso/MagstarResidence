@@ -1,0 +1,119 @@
+#这个配置文件记载了插件内各个权限节点的名称及描述。
+#权限节点的ID、数量不可改变！
+#权限ID后面标注了注释，表示这项权限的类别。
+#当类别被标注为General时，表示该权限为领地通用权限，可以在/res set内查询到。
+#当类别被标注为Player时，表示该权限为玩家权限，可以在/res pset <player>内查询到。
+#当两者均标注时，表示该权限既为玩家权限，也为领地通用权限，可以在二者内查询到。
+#有两种可能：
+#1.这个权限仅控制玩家的行为，全局权限中表示该权限对进入领地内的所有玩家生效。
+#2.这个权限不仅控制玩家的行为，还控制方块/实体的行为。全局权限中表示该权限对进入领地内的所有方块/实体生效。
+#这取决于其”事件“究竟是玩家事件、方块事件，还是实体事件。
+#不同权限所选取的Material不能重复！
+move: #General, Player
+  name: "移动"
+  description: "当此项设置为true时，允许玩家在领地内移动。"
+  material: leather_boots #权限在Gui内的材质。当权限为true时，体现为附魔光效。当权限为false时，没有附魔光效。
+break: #General, Player
+  name: "破坏"
+  description: "当此项设置为true时，允许玩家破坏领地内的方块。"
+  material: iron_pickaxe
+place: #General, Player
+  name: "放置"
+  description: "当此项设置为true时，允许玩家在领地内放置方块。"
+  material: grass_block
+use: #General, Player
+  name: "使用"
+  description: "当此项设置为true时，允许玩家与领地内的方块交互。"
+  material: lever
+container: #General, Player
+  name: "容器"
+  description: "当此项设置为true时，允许玩家打开领地内的容器。"
+  material: chest
+bucket: #General, Player
+  name: "桶"
+  description: "当此项设置为true时，允许玩家在领地内使用桶。"
+  material: bucket
+bonemeal: #General, Player
+  name: "催熟"
+  description: "当此项设置为true时，允许作物被骨粉催熟。"
+  material: bone_meal
+interact: #General, Player
+  name: "交互"
+  description: "当此项设置为true时，允许领地内实体与实体交互。包括玩家。"
+  material: allay_spawn_egg
+pick: #General, Player
+  name: "拾取"
+  description: "当此项设置为true时，允许玩家捡起物品。如：掉落物，箭矢，经验球。"
+  material: arrow
+attack: #General, Player
+  name: "攻击"
+  description: "当此项设置为true时，允许领地内的生物被攻击。这不包括PVP行为！"
+  material: shield
+pvp: #General, Player
+  name: "PVP"
+  description: "当此项设置为true时，允许领地内的玩家PVP。"
+  material: diamond_sword
+fish: #General, Player
+  name: "钓鱼"
+  description: "当此项设置为true时，允许玩家在领地内钓鱼。" #这个”钓鱼“以鱼钩的位置为准！当鱼上钩时才会被检测。
+  material: fishing_rod
+throw: #General, Player
+  name: "投掷物"
+  description: "当此项设置为true时，允许领地内发射投掷物。"
+  material: fire_charge
+info: #General, Player
+  name: "查询信息"
+  description: "当此项设置为true时，允许玩家查询领地信息。"
+  material: name_tag
+shop: #General, Player
+  name: "交易"
+  description: "当此项设置为true时，允许玩家使用商店。"
+  material: raw_gold
+tp: #General, Player
+  name: "传送"
+  description: "当此项设置为true时，允许玩家传送到该领地。"
+  material: ender_pearl
+spread: #General
+  name: "蔓延"
+  description: "当此项设置为true时，允许方块蔓延。如：草方块、菌丝"
+  material: mycelium
+hopper: #General
+  name: "漏斗"
+  description: "当此项设置为true时，允许领地内漏斗等工作。"
+  material: hopper
+explode: #General
+  name: "爆炸"
+  description: "当此项设置为true时，允许领地内发生爆炸。不推荐！"
+  material: tnt
+water: #General
+  name: "水流动"
+  description: "当此项设置为true时，允许水在领地内流动。"
+  material: water_bucket
+lava: #General
+  name: "岩浆流动"
+  description: "当此项设置为true时，允许岩浆在领地内流动。"
+  material: lava_bucket
+burn: #General
+  name: "燃烧"
+  description: "当此项设置为true时，允许可燃烧的方块发生燃烧。"
+  material: flint_and_steel
+grow: #General
+  name: "生长"
+  description: "当此项设置为true时，允许作物生长。"
+  material: wheat
+fade: #General
+  name: "消失"
+  description: "当此项设置为true时，允许方块自然消失。"
+  material: ice
+fall: #General
+  name: "掉落"
+  description: "当此项设置为true时，允许方块自然掉落。"
+  material: sand
+piston: #General
+  name: "活塞"
+  description: "当此项设置为true时，允许活塞使用。"
+  material: piston
+form: #General
+  name: "形成"
+  description: "当此项设置为true时，允许方块自然形成。"
+  material: obsidian

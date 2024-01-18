@@ -1,0 +1,32 @@
+prefix: "§f[§bMagStar§3Residence§f]"
+
+save-cycle: 5 #单位: 分钟(整数值)
+
+mysql:
+  enabled: true # false 以使用文件，true 以使用 MySQL
+  host: localhost # 数据库主机
+  db-name: residence # 数据库名
+  username: root # 用户名
+  password: 123456 # 密码
+  port: 3306 # 端口
+
+create_tools: wooden_hoe #创建领地使用的工具
+wait_creation: 60 #当玩家选择1个点时，等待选择第2个点的时间。当超出这个时间时，将不再等待。单位：秒(整数值)。
+cost_currency: default-coin #使用的MagstarEconomy货币ID
+random_range: 10000 #使用res rt时传送的区域范围。默认设置为10000，意思是从(-10000, *, -10000)到(10000, *, 10000).0之间的正方形区域。
+available_world:
+  - world #领地可用的世界列表
+explosion_proof: true #领地可用的世界是否防爆
+notice: actionbar #有两种选择：message和actionbar
+buy_price: #购买领地时，每个方块花的钱数(整数值)
+  default: 3 #权限组名
+  manager: 2
+  builder: 1
+sell_price:
+  default: 1 #权限组名
+  manager: 1
+  builder: 1
+max_residents: #如果未定义组，将会被自动设置为0。
+  default: 3
+  manager: 3
+  builder: -1 #设置为-1时，表示无限制。
